@@ -1,17 +1,22 @@
 export default {
   global: {
-    componenteFormativo: 'NOMBRE DEL COMPONENTE FORMATIVO',
-    descripcionCurso: 'BREVE DESCRIPCIÓN',
-    imagenBannerPrincipal: require('@/assets/curso/portada/banner-princiapal.svg'),
+    componenteFormativo: 'Construcción API',
+    descripcionCurso:
+      'En este componente formativo se abordarán los conceptos relacionados con la configuración del entorno de desarrollo como espacio de trabajo para la API REST. Se revisarán las buenas prácticas de los estándares de codificación para el desarrollo de la API, la cual será construida con las tecnologías de Node.js, Express y MongoDB y se abordará el renting de la API creada, a través de la herramienta Postman.',
+    imagenBannerPrincipal: require('@/assets/curso/portada/banner-principal.png'),
     fondoBannerPrincipal: require('@/assets/curso/portada/fondo-banner-principal.png'),
     imagenesDecorativasBanner: [
       {
         clases: ['banner-principal-decorativo-1', 'd-none', 'd-lg-block'],
-        imagen: require('@/assets/curso/portada/banner-principal-decorativo-1.svg'),
+        imagen: require('@/assets/curso/portada/banner-principal-decorativo-1.png'),
       },
       {
         clases: ['banner-principal-decorativo-2'],
-        imagen: require('@/assets/curso/portada/banner-principal-decorativo-2.svg'),
+        imagen: require('@/assets/curso/portada/banner-principal-decorativo-2.png'),
+      },
+      {
+        clases: ['banner-principal-decorativo-3'],
+        imagen: require('@/assets/curso/portada/banner-principal-decorativo-3.png'),
       },
     ],
   },
@@ -31,27 +36,48 @@ export default {
       {
         nombreRuta: 'tema1',
         numero: '1',
-        titulo: 'Titulo de primer nivel',
+        titulo: 'La internet y la web',
         desarrolloContenidos: true,
         subMenu: [
           {
             numero: '1.1',
-            titulo: 'Titulo de segundo nivel',
+            titulo: 'Conceptos sobre el entorno de desarrollo integrado - IDE',
             hash: 't_1_1',
+          },
+          {
+            numero: '1.2',
+            titulo: 'Instalación del Visual Studio Code',
+            hash: 't_1_2',
+          },
+          {
+            numero: '1.3',
+            titulo: 'Instalación y configuración del Node.js y npm',
+            hash: 't_1_3',
+          },
+          {
+            numero: '1.4',
+            titulo: 'Instalación de módulo',
+            hash: 't_1_4',
           },
         ],
       },
-
       {
         nombreRuta: 'tema2',
         numero: '2',
-        titulo: 'Titulo de primer nivel',
+        titulo: 'Codificación de la API REST con Node.js',
         desarrolloContenidos: true,
+        subMenu: [
+          {
+            numero: '2.1',
+            titulo: 'Buenas prácticas en la codificación de Node.js',
+            hash: 't_2_1',
+          },
+        ],
       },
       {
         nombreRuta: 'tema3',
         numero: '3',
-        titulo: 'Titulo de primer nivel',
+        titulo: '<em>Testing</em> de la API REST con Postman',
         desarrolloContenidos: true,
       },
     ],
@@ -102,32 +128,111 @@ export default {
   },
   complementario: [
     {
-      tema: '',
-      referencia: '',
-      tipo: '',
-      link: 'https://www.google.com/',
+      tema: 'Entidades de información digital ',
+      referencia:
+        'Coding, G. (2020). Cómo instalar Node.js en Windows 10 [video]. YouTube.',
+      tipo: 'Video',
+      link: 'https://www.youtube.com/watch?v=BgtB31gXkoA ',
     },
     {
-      tema: '',
-      referencia: '',
-      tipo: '',
-      descarga: '/downloads/prueba.pdf',
+      tema: 'Información digital',
+      referencia:
+        'Dominicode. (2018). Cómo usar Postman, en español [video]. YouTube.',
+      tipo: 'Video',
+      link: 'https://www.youtube.com/watch?v=qsejysrhJiU',
+    },
+    {
+      tema: 'Entidades de información digital',
+      referencia:
+        'DiSimone, K. (2020). mLab to Atlas for existing NS users [video]. YouTube.',
+      tipo: 'Video',
+      link: 'https://www.youtube.com/watch?v=hXSLBACjYQo ',
     },
   ],
   glosario: [
     {
-      termino: 'Término',
-      significado: 'Texto de la definición',
+      termino: 'Identación',
+      significado:
+        'dentro del contexto de desarrollo de <em>software</em> identar es un término que significa mover un bloque de código hacia la derecha insertando espacios o tabulaciones, para así separarlo del margen izquierdo y distinguirlo mejor del texto adyacente, es decir, organizar mejor el código. La identación se considera un principio fundamental de buena práctica de la programación de <em>software</em>. ',
     },
     {
-      termino: '<em>Término con extranjerismo</em>',
-      significado: 'Definición',
+      termino: 'JSON',
+      significado:
+        '<em>Java Script Object Notation</em> (JSON) es un formato basado en texto estándar que se utiliza para representar datos estructurados en la sintaxis de objetos de JavaScript. Se utiliza principalmente para transmitir datos en aplicaciones web (como es el caso de enviar algunos datos desde el servidor al cliente, por lo tanto, estos datos pueden ser mostrados en páginas web o viceversa)  . ',
+    },
+    {
+      termino: '<em>Localhost</em>',
+      significado:
+        'en el contexto de las redes de computadoras, <em>localhost</em> es una computadora que ejecuta un programa. La computadora que se tiene al frente funciona también como un servidor virtual; este modo es comúnmente utilizado para realizar pruebas en el desarrollo web. ',
+    },
+    {
+      termino: 'Manejadores o <em>handlers</em> de eventos',
+      significado:
+        'en la programación con JavaScript un evento por sí mismo carece de utilidad; para que los eventos resulten útiles o aplicables se debe asociar funciones o código JavaScript a cada evento. De esta forma, cuando se produce un evento de manera inmediata se ejecuta el código indicado, por lo que la aplicación responde ante cualquier evento que se produzca durante su ejecución. Las funciones o código JavaScript que se realizan para cada evento se denominan "manejador de eventos”. ',
+    },
+    {
+      termino: '<em>Middleware</em>',
+      significado:
+        'es un bloque de código que se ejecuta entre la petición que hace el usuario (<em>request</em>) hasta que esa petición llega al servidor. De esta manera son funciones que tienen acceso al objeto de solicitud (req), el objeto de respuesta (res) y la siguiente función de <em>middleware</em> en el ciclo de solicitud-respuesta de la aplicación. ',
     },
   ],
   referencias: [
     {
-      referencia: '',
-      link: '',
+      referencia:
+        'Choque, J. C. (2016). Adición de estándares de codificación node.js. GitLab.',
+      link:
+        'https://gitlab.agetic.gob.bo/dbarra/bolivialibre/commit/1ff84b6ae70f0e9436f6e6ddc7f3e060bc9556ad',
+    },
+    {
+      referencia: 'Chrome web store. (2021). Postman.',
+      link:
+        'https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=es-419',
+    },
+    {
+      referencia: 'Express. (2021). Direccionamiento básico.',
+      link: 'https://expressjs.com/es/starter/basic-routing.html ',
+    },
+    {
+      referencia: 'Gómez, D. (2017). Nodemon. Vortexbird.',
+      link:
+        'https://vortexbird.com/nodemon/#:%7E:text=Nodemon%20es%20una%20utilidad%20que,desarrollo%20de%20aplicaciones%20en%20nodojs ',
+    },
+    {
+      referencia:
+        'López, A. (2021). Qué es Postman y para qué sirve. OpenWebinars.',
+      link: 'https://openwebinars.net/blog/que-es-postman/',
+    },
+    {
+      referencia: 'Mozilla. (2021). Await. MDN Web Docs.',
+      link:
+        'https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/await ',
+    },
+    {
+      referencia:
+        'Mozilla. (2021). Haciendo la programación asíncrona más fácil con async y await. MDN Web Docs.',
+      link:
+        'https://developer.mozilla.org/es/docs/Learn/JavaScript/Asynchronous/Async_await ',
+    },
+    {
+      referencia: 'Mozilla. (2021). Introducción a Express/Node. MDN Web Docs.',
+      link:
+        'https://developer.mozilla.org/es/docs/Learn/Server-side/Express_Nodejs/Introduction',
+    },
+    {
+      referencia: 'Nodejs.org. (2021). Acerca de Node.js. Node.js.',
+      link: 'https://nodejs.org/es/about/',
+    },
+    {
+      referencia: 'npm. (2021). About npm.',
+      link: 'https://www.npmjs.com/about ',
+    },
+    {
+      referencia: 'Red Hat. (2021). El concepto de IDE.',
+      link: 'https://www.redhat.com/es/topics/middleware/what-is-ide ',
+    },
+    {
+      referencia: 'Whyte, A. (2021). Google JavaScript Style Guide.',
+      link: 'https://google.github.io/styleguide/javascriptguide.xml ',
     },
   ],
   creditos: [
@@ -136,13 +241,14 @@ export default {
       autores: [
         {
           nombre: 'Milady Tatiana Villamil Castellanos',
-          cargo: 'Responsable del Ecosistema',
+          cargo: 'Líder del Ecosistema',
           centro: 'Dirección General',
         },
         {
-          nombre: 'Olga Constanza Bermúdez Jaimes',
+          nombre: 'Olga Constanza Bermudez Jaimes',
           cargo: 'Responsable de Línea de Producción',
-          centro: 'Centro de Servicios de Salud - Regional Antioquia',
+          centro:
+            'Centro de Formación Centro de Servicios de Salud - Regional Antioquia',
         },
       ],
     },
@@ -150,8 +256,20 @@ export default {
       titulo: 'CONTENIDO INSTRUCCIONAL',
       autores: [
         {
-          nombre: 'Nombre responsable',
-          cargo: 'Nombre del rol',
+          nombre: 'Ervin Andrade',
+          cargo: 'Experto temático',
+          centro:
+            'Centro de Teleinformática y Producción Industrial - Regional Cauca',
+        },
+        {
+          nombre: 'Peter Emerson Pinchao Solis',
+          cargo: 'Experto temático',
+          centro:
+            'Centro de Teleinformática y Producción Industrial - Regional Cauca',
+        },
+        {
+          nombre: 'Ana Catalina Córdoba Sus',
+          cargo: 'Evaluadora Instruccional',
           centro: 'Centro de Servicios de Salud - Regional Antioquia',
         },
       ],
@@ -160,24 +278,22 @@ export default {
       titulo: 'DISEÑO Y DESARROLLO DE RECURSOS EDUCATIVOS DIGITALES',
       autores: [
         {
-          nombre: 'Nombre responsable',
+          nombre: 'Blanca Flor Tinoco Torres',
           cargo: 'Diseñador de Contenidos Digitales',
-          centro: 'Centro de Servicios de Salud - Regional Antioquia',
+          centro:
+            'Centro de Formación Centro de Servicios de Salud - Regional Antioquia',
         },
         {
-          nombre: 'Nombre responsable',
+          nombre: 'Luis Jesús Pérez Madariaga',
           cargo: 'Desarrollador Fullstack',
-          centro: 'Centro de Servicios de Salud - Regional Antioquia',
+          centro:
+            'Centro de Formación Centro de Servicios de Salud - Regional Antioquia',
         },
         {
-          nombre: 'Nombre',
-          cargo: 'Animador y Producción audiovisual',
-          centro: 'Centro de Servicios de Salud - Regional Antioquia',
-        },
-        {
-          nombre: 'Nombre',
+          nombre: 'Edgar Mauricio Cortés García',
           cargo: 'Actividad Didáctica',
-          centro: 'Centro de Servicios de Salud - Regional Antioquia',
+          centro:
+            'Centro de Formación Centro de Servicios de Salud - Regional Antioquia',
         },
       ],
     },
@@ -185,24 +301,16 @@ export default {
       titulo: 'VALIDACIÓN RECURSO EDUCATIVO DIGITAL',
       autores: [
         {
-          nombre: 'Luis Gabriel Urueta Alvarez',
-          cargo: 'Validador de Recursos Educativos Digitales',
-          centro: 'Centro de Servicios de Salud - Regional Antioquia',
-        },
-        {
           nombre: 'Jaime Hernán Tejada Llano',
           cargo: 'Validador de Recursos Educativos Digitales',
-          centro: 'Centro de Servicios de Salud - Regional Antioquia',
+          centro:
+            'Centro de Formación Centro de Servicios de Salud - Regional Antioquia',
         },
         {
           nombre: 'Daniel Ricardo Mutis Gómez',
-          cargo: 'Evaluador para contenidos inclusivos y accesibles',
-          centro: 'Centro de Servicios de Salud - Regional Antioquia',
-        },
-        {
-          nombre: 'Margarita Marcela Medrano Gómez',
-          cargo: 'Evaluador para contenidos inclusivos y accesibles',
-          centro: 'Centro de Servicios de Salud - Regional Antioquia',
+          cargo: 'Evaluador para Contenidos Inclusivos y Accesibles',
+          centro:
+            'Centro de Formación Centro de Servicios de Salud - Regional Antioquia',
         },
       ],
     },
