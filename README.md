@@ -2,7 +2,7 @@
 
 ## **Enlace GitHubPages**
 
-[https://ecored-sena.github.io/ECORED_TEMPLATE_REPO/](https://ecored-sena.github.io/ECORED_TEMPLATE_REPO/)
+[https://ecored-sena.github.io/CF21_228118_ANALISIS_DESARROLLO_SOFTWARE/#/](https://ecored-sena.github.io/CF21_228118_ANALISIS_DESARROLLO_SOFTWARE/#/)
 
 #
 

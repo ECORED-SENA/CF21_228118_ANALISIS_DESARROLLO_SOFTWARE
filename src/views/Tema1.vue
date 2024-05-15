@@ -95,8 +95,8 @@ export default {
   position: absolute
   width: 125%
   left: -15%
-  height: 100%
-  top: 0
+  height: 80%
+  top: 20%
   background: url(../assets/curso/tema1/4.png)
   background-size: cover
 </style>
