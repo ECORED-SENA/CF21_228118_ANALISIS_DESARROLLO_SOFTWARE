@@ -16,7 +16,7 @@
         .col-lg-7(data-aos="fade-left")
           p #[strong(style="color:#8722E2;") En este componente formativo se estudiarán los conceptos y pasos para el desarrollo de una API REST, utilizando las tecnologías del #[em back-end] como Node.js, Express y el sistema de bases de datos no relacional como lo es MongoDB]. De esta forma se inicia con la puesta a punto del entorno de desarrollo con Visual Studio Code, el cual será el espacio de trabajo donde se construirá la API. Adicionalmente, se comprenderá la importancia del uso de los comandos (en la terminal) para la instalación y configuración de paquetes necesarios para el correcto funcionamiento del proyecto; de igual manera, se ilustran algunas buenas prácticas de desarrollo y herramientas que harán más prolijo el código.
           .row.mt-4
-            .col-auto
+            .col-auto.d-none.d-md-block
               figure
                 img(src="@/assets/curso/intro3.svg")
             .col(style="place-self:center;")
