@@ -173,7 +173,7 @@ export default {
     {
       termino: '<em>Middleware</em>',
       significado:
-        'es un bloque de código que se ejecuta entre la petición que hace el usuario (<em>request</em>) hasta que esa petición llega al servidor. De esta manera son funciones que tienen acceso al objeto de solicitud (req), el objeto de respuesta (res) y la siguiente función de <em>middleware</em> en el ciclo de solicitud-respuesta de la aplicación. ',
+        'es un bloque de código que se ejecuta entre la petición que hace el usuario (<em>request</em>) hasta que esa petición llega al servidor. De esta manera, son funciones que tienen acceso al objeto de solicitud (req), el objeto de respuesta (res) y la siguiente función de <em>middleware</em> en el ciclo de solicitud-respuesta de la aplicación. ',
     },
   ],
   referencias: [
@@ -206,12 +206,6 @@ export default {
       referencia: 'Mozilla. (2021). Await. MDN Web Docs.',
       link:
         'https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/await ',
-    },
-    {
-      referencia:
-        'Mozilla. (2021). Haciendo la programación asíncrona más fácil con async y await. MDN Web Docs.',
-      link:
-        'https://developer.mozilla.org/es/docs/Learn/JavaScript/Asynchronous/Async_await ',
     },
     {
       referencia: 'Mozilla. (2021). Introducción a Express/Node. MDN Web Docs.',
@@ -256,14 +250,14 @@ export default {
       titulo: 'CONTENIDO INSTRUCCIONAL',
       autores: [
         {
-          nombre: 'Ervin Andrade',
-          cargo: 'Experto temático',
+          nombre: 'Zulema Yidney León Escobar',
+          cargo: 'Experta Temática',
           centro:
             'Centro de Teleinformática y Producción Industrial - Regional Cauca',
         },
         {
-          nombre: 'Peter Emerson Pinchao Solis',
-          cargo: 'Experto temático',
+          nombre: 'Jonathan Guerrero Astaiza',
+          cargo: 'Experto Temático',
           centro:
             'Centro de Teleinformática y Producción Industrial - Regional Cauca',
         },
@@ -278,7 +272,7 @@ export default {
       titulo: 'DISEÑO Y DESARROLLO DE RECURSOS EDUCATIVOS DIGITALES',
       autores: [
         {
-          nombre: 'Blanca Flor Tinoco Torres',
+          nombre: 'Yerson Fabían Zárate Saavedra',
           cargo: 'Diseñador de Contenidos Digitales',
           centro:
             'Centro de Formación Centro de Servicios de Salud - Regional Antioquia',

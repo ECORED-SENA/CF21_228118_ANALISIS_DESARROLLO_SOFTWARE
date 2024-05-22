@@ -20,7 +20,7 @@
         .titulo-segundo(data-aos="flip-up")
           h2#t_1_1 1.1 Conceptos sobre el entorno de desarrollo integrado - IDE
         
-        p(data-aos="fade-right") Como primera medida, es necesario tener en cuenta la definición de un entorno de desarrollo integrado IDE, que es un espacio de trabajo basado en tecnologías y #[em software], que sirven de plataforma para el diseño de aplicaciones que componen una serie de herramientas para el desarrollador de #[em software]. Un IDE cuenta con las siguientes características:
+        p(data-aos="fade-right") Como primera medida, es necesario tener en cuenta la definición de un entorno de desarrollo integrado IDE, que es un espacio de trabajo basado en tecnologías y #[em software], que sirve de plataforma para el diseño de aplicaciones que componen una serie de herramientas para el desarrollador de #[em software]. Un IDE cuenta con las siguientes características:
         .semicircle_absolute.d-none.d-md-block(style="left: unset !important;right: -190px !important;top:140px;")
       
       .row.mt-4
@@ -55,7 +55,7 @@
           .p-4.pt-0.bg-white.text-center.h-100(style="box-shadow:0px 4px 20px rgba(0,0,0,.1);border-radius:15px;" data-aos="zoom-in")
             figure.m-auto.text-center
               img(src="@/assets/curso/tema1/7.svg" style="max-width:120px;display:inline;margin-top:-35px;")
-            p.mt-4.mb-0 Se aprovecha porque este entorno tiene incorporado la terminal, lo cual hace mucho más fácil el desarrollo sobre todo con las tecnologías de Node.js, porque trae los paquetes necesarios para el proyecto.
+            p.mt-4.mb-0 Se aprovecha porque este entorno tiene incorporada la terminal, lo cual hace mucho más fácil el desarrollo, sobre todo con las tecnologías de Node.js, porque trae los paquetes necesarios para el proyecto.
       p.mt-5(data-aos="fade-up") En el proceso de alistamiento del entorno para iniciar el proyecto de desarrollo de la API, se deberá contar con los siguientes recursos:
 
     .cont_semicircle_absolute

@@ -21,8 +21,6 @@
           h2#t_2_1 2.1 Buenas prácticas en la codificación de Node.js
         .semicircle_absolute.d-none.d-md-block(style="left: unset !important;right: -190px !important;top:110px;")
       
-      p(data-aoos="fade-right") Como primera medida, es necesario tener en cuenta la definición de un entorno de desarrollo integrado IDE, que es un espacio de trabajo basado en tecnologías y #[em software], que sirven de plataforma para el diseño de aplicaciones que componen una serie de herramientas para el desarrollador de #[em software]. Un IDE cuenta con las siguientes características:
-
       .row.mt-4
         .col-lg-8.mb-4.mb-lg-0(data-aos="fade-right")
           .p-4(style="background-color:#FFEFAF;border-radius:13px;")
