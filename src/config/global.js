@@ -112,7 +112,7 @@ export default {
       {
         icono: 'fas fa-file-pdf',
         titulo: 'Descargar PDF',
-        download: 'downloads/prueba.pdf',
+        download: 'downloads/228118_CF21_DU.zip',
       },
       {
         icono: 'fas fa-download',
@@ -130,14 +130,14 @@ export default {
     {
       tema: 'Entidades de información digital ',
       referencia:
-        'Coding, G. (2020). Cómo instalar Node.js en Windows 10 [video]. YouTube.',
+        'Coding, G. (2020). Cómo instalar Node.js en Windows 2024 [video]. YouTube.',
       tipo: 'Video',
       link: 'https://www.youtube.com/watch?v=BgtB31gXkoA ',
     },
     {
       tema: 'Información digital',
       referencia:
-        'Dominicode. (2018). Cómo usar Postman, en español [video]. YouTube.',
+        'Dominicode. (2018). "Postman en Español: ¡El tutorial definitivo para el éxito en las pruebas API! [video]. YouTube.',
       tipo: 'Video',
       link: 'https://www.youtube.com/watch?v=qsejysrhJiU',
     },
@@ -158,7 +158,7 @@ export default {
     {
       termino: 'JSON',
       significado:
-        '<em>Java Script Object Notation</em> (JSON) es un formato basado en texto estándar que se utiliza para representar datos estructurados en la sintaxis de objetos de JavaScript. Se utiliza principalmente para transmitir datos en aplicaciones web (como es el caso de enviar algunos datos desde el servidor al cliente, por lo tanto, estos datos pueden ser mostrados en páginas web o viceversa)  . ',
+        '<em>Java Script Object Notation</em> (JSON) es un formato basado en texto estándar que se utiliza para representar datos estructurados en la sintaxis de objetos de JavaScript. Se utiliza principalmente para transmitir datos en aplicaciones web (como es el caso de enviar algunos datos desde el servidor al cliente, por lo tanto, estos datos pueden ser mostrados en páginas web o viceversa). ',
     },
     {
       termino: '<em>Localhost</em>',
