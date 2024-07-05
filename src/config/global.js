@@ -178,12 +178,6 @@ export default {
   ],
   referencias: [
     {
-      referencia:
-        'Choque, J. C. (2016). Adición de estándares de codificación node.js. GitLab.',
-      link:
-        'https://gitlab.agetic.gob.bo/dbarra/bolivialibre/commit/1ff84b6ae70f0e9436f6e6ddc7f3e060bc9556ad',
-    },
-    {
       referencia: 'Chrome web store. (2021). Postman.',
       link:
         'https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=es-419',
@@ -225,8 +219,8 @@ export default {
       link: 'https://www.redhat.com/es/topics/middleware/what-is-ide ',
     },
     {
-      referencia: 'Whyte, A. (2021). Google JavaScript Style Guide.',
-      link: 'https://google.github.io/styleguide/javascriptguide.xml ',
+      referencia: 'Google. (s.f.). Google TypeScript Style Guide.',
+      link: 'https://google.github.io/styleguide/tsguide.html',
     },
   ],
   creditos: [
@@ -279,7 +273,7 @@ export default {
         },
         {
           nombre: 'Luis Jesús Pérez Madariaga',
-          cargo: 'Desarrollador Fullstack',
+          cargo: 'Desarrollador <em>Fullstack</em>',
           centro:
             'Centro de Formación Centro de Servicios de Salud - Regional Antioquia',
         },

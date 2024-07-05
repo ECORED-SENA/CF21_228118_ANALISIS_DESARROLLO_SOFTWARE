@@ -24,7 +24,7 @@
       .row.mt-4
         .col-lg-8.mb-4.mb-lg-0(data-aos="fade-right")
           .p-4(style="background-color:#FFEFAF;border-radius:13px;")
-            p El objetivo de seguir estándares de codificación, es alcanzar un código mantenible y se considera mantenible cuando el código es legible, consistente, predictivo y documentado. En la práctica, la corrección de errores y modificación del código desarrollado de un producto #[em software] toma demasiado tiempo y se llega algunas veces a que no es posible realizar del todo el desarrollo, por lo que se toma la decisión de iniciar de cero, debido a las malas prácticas. (Choque, 2016).
+            p El objetivo de seguir estándares de codificación es alcanzar un código mantenible y se considera mantenible cuando el código es legible, consistente, predictivo y documentado. En la práctica, la corrección de errores y modificación del código desarrollado de un producto #[em software] toma demasiado tiempo y se llega algunas veces a que no es posible realizar del todo el desarrollo, por lo que se toma la decisión de iniciar de cero, debido a las malas prácticas. (Choque, 2016).
             figure.text-end
               img(src="@/assets/curso/tema2/3.svg" style="max-width:100px;display:inline;")
         .col-lg-4(data-aos="fade-left")
@@ -60,10 +60,10 @@
             ol.lista-ol
               li.d-flex
                 span.fw-bold(style="color:#8722E2;") 1. 
-                div Las líneas de código que tienen alguna relación, deben estar agrupadas sin espacio entre sus líneas.
+                div Las líneas de código que tienen alguna relación deben estar agrupadas sin espacio entre sus líneas.
               li.d-flex
                 span.fw-bold(style="color:#8722E2;") 2. 
-                div La cantidad máxima de caracteres que debe tener una línea de código, debería ser de 120.
+                div La cantidad máxima de caracteres que debe tener una línea de código debería ser de 120.
               li.d-flex
                 span.fw-bold(style="color:#8722E2;") 3. 
                 div Los bloques de código que son alusivos a las clases, procedimientos y estructuras de control, deben estar identados con 4 espacios, que es lo mismo a una tabulación.
@@ -76,7 +76,7 @@
                 div Como una buena práctica los errores y/o excepciones posibles, deben ser capturados (#[em catch]) y se debe lanzar (#[em throw]) un mensaje preciso, con el fin de evitar la finalización abrupta del programa.
               li.d-flex
                 span.fw-bold(style="color:#8722E2;") 2. 
-                div En caso que el error requiera alguna acción por parte del usuario, como puede ser continuar, cancelar u otras opciones, el sistema debe informar al usuario sobre las consecuencias de cada elección.
+                div En caso de que el error requiera alguna acción por parte del usuario, como puede ser continuar, cancelar u otras opciones, el sistema debe informar al usuario sobre las consecuencias de cada elección.
           .row.col-xl-11.m-auto(titulo="Comentarios")
             ol.lista-ol
               li.d-flex
@@ -86,7 +86,7 @@
                 span.fw-bold(style="color:#8722E2;") 2. 
                 div Su principal ventaja es que, a partir de ellos, se logra reducir el costo de transferencia de conocimientos entre equipos de desarrollo, dado que es posible intervenir de manera más rápida en la continuación del desarrollo.
     
-    .tarjeta.color-primario.p-3.mt-5(style="background: rgb(146,41,238);background: linear-gradient(180deg, rgba(146,41,238,1) 0%, rgba(98,17,170,1) 45%, rgba(52,9,90,1) 100%);" data-aos="zoom-in")
+    .tarjeta.color-primario.p-3.mt-5(style="background: rgb(146,41,238);background: linear-gradient(180deg, rgba(146,41,238,1) 0%, rgba(98,17,170,1) 45%, rgba(52,9,90,1) 100%);")
       .row.justify-content-around.align-items-center
         .col-3.col-sm-2.col-lg-1
           img(src="@/assets/curso/tema2/6.svg")
